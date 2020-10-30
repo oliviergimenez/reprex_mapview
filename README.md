@@ -1,0 +1,1 @@
+Reproducible example of an issue with mapview when the pipe operator is used. See <https://github.com/r-spatial/mapview/issues/348> for more details. 
