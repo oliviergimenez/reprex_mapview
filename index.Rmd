@@ -17,11 +17,14 @@ library(sf)
 library(mapview)
 ```
 
+## No piping - Does work
 ```{r}
 mapview(breweries, zcol = "founded")
 ```
 
 ---
+
+## Piping - Does not work
 
 ```{r}
 breweries %>% mapview(zcol = "founded")
