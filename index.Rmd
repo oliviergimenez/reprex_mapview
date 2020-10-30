@@ -24,6 +24,6 @@ mapview(breweries, zcol = "founded")
 ---
 
 ```{r}
-#sessionInfo()
+breweries %>% mapview(zcol = "founded")
 ```
 
