@@ -1,7 +1,6 @@
 ---
 title: "reprex mapview"
-author: "Olivier Gimenez"
-date: "2016/12/12 (updated: `r Sys.Date()`)"
+date: "`r Sys.Date()`"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -12,23 +11,19 @@ output:
 ---
 
 
-```{r setup, include=FALSE}
+```{r setup, include=FALSE, message = FALSE}
 options(htmltools.dir.version = FALSE)
-library(mapview)
 library(sf)
+library(mapview)
 ```
-
-```{r out.width='100%', fig.height=6}
-library(leaflet)
-leaflet() %>% addTiles() %>% setView(-93.65, 42.0285, zoom = 17)
-```
-
-
----
 
 ```{r}
 mapview(breweries, zcol = "founded")
 ```
 
+---
 
-<!-- , eval=require('leaflet') -->
+```{r}
+sessionInfo()
+```
+
