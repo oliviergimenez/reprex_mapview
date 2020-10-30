@@ -14,11 +14,20 @@ output:
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
+library(mapview)
+library(sf)
 ```
 
 ```{r out.width='100%', fig.height=6}
 library(leaflet)
 leaflet() %>% addTiles() %>% setView(-93.65, 42.0285, zoom = 17)
+```
+
+
+---
+
+```{r}
+mapview(breweries, zcol = "founded")
 ```
 
 
